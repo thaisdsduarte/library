@@ -1,0 +1,62 @@
+<div class="container">
+  <header class="header mb-3 mt-3">
+    <h4>Cadastro de livros</h4>
+    <i class="bi bi-x-lg" (click)="offcanvas.dismiss('Cross click')"></i>
+  </header>
+  <main class="body">
+    <form [formGroup]="booksForm">
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="titulo" class="form-label">Título</label>
+        </div>
+        <div class="col-6">
+          <input type="text" id="titulo" class="form-control form-control-sm" formControlName="titulo" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="editora" class="form-label">Editora</label>
+        </div>
+        <div class="col-6">
+          <input type="text" id="editora" class="form-control form-control-sm" formControlName="editora" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="edicao" class="form-label">Edição</label>
+        </div>
+        <div class="col-6">
+          <input type="text" id="edicao" class="form-control form-control-sm" formControlName="edicao" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="anoPublicacao" class="form-label">Ano</label>
+        </div>
+        <div class="col-6">
+          <input type="text" id="anoPublicacao" class="form-control form-control-sm" formControlName="anoPublicacao" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="autor" class="form-label">Autor</label>
+        </div>
+        <div class="col-6">
+          <input type="text" id="autor" class="form-control form-control-sm" formControlName="autor" />
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-4">
+          <label for="assunto" class="form-label">Assunto</label>
+        </div>
+        <div class="col-6">
+          <input type="text" id="assunto" class="form-control form-control-sm" formControlName="assunto" />
+        </div>
+      </div>
+    </form>
+  </main>
+  <footer class="actions-footer mt-4">
+    <button type="button" class="btn button-cancel" (click)="offcanvas.dismiss('Cross click')">Cancelar</button>
+    <button type="submit" class="btn button-save" (click)="onSubmit()" >Salvar</button>
+  </footer>
+</div>

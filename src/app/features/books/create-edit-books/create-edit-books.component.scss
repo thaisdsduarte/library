@@ -1,0 +1,58 @@
+.container {
+    .header {
+        display: flex;
+        justify-content: space-between;
+
+        .bi-x-lg {
+            cursor: pointer;
+        }
+    }
+
+    .row {
+        .form-label {
+            font-size: 12px;
+
+        }
+    }
+
+  .actions-footer {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+
+    .button-save {
+      padding: 4px 24px;
+      border-radius: 4px;
+      font-size: 12px;
+      background-color: #16b364;
+      color: #fff;
+      font-weight: 600;
+
+      &:hover {
+        background-color: #3ccb7f;
+      }
+
+      &:active {
+        background-color: #099250;
+      }
+    }
+
+    .button-cancel {
+      padding: 4px 24px;
+      border-radius: 4px;
+      font-size: 12px;
+      background-color: #f8fafc;
+      color: #101828;
+      font-weight: 600;
+      border: 1px solid #d0d5dd;
+
+      &:hover {
+        background-color: #fff;
+      }
+
+      &:active {
+        background-color: #eaecf0;
+      }
+    }
+  }
+}

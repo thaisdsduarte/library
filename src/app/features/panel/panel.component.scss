@@ -1,0 +1,16 @@
+.header {
+    border-bottom: solid 1px #f0f2f7;
+}
+.main {
+    height: calc(100% - 64px);
+    display: grid;
+    grid-template-columns: 220px 1fr;
+
+    .sidebar {        
+        border-right: solid 1px #e2e5e9;
+    }
+
+    .main-body {
+        background-color: #f8fafc;
+    }
+}
